@@ -1,0 +1,26 @@
+<button type="button" class="like__btn btn btn-outline-danger">
+      <span id="icon"><i class="far fa-thumbs-up"></i></span>
+      <span id="count">0</span> Likes
+  </button>
+
+<script type="text/javascript">
+    const LikeBtn = document.querySelector(".like__btn")
+let likeIcon = document.querySelector("#icon")
+let count = document.querySelector("#count")
+
+// button clicked
+let clicked = false;
+
+LikeBtn.addEventListener("click", () => {
+    if(!clicked) {
+        clicked = true;
+        likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`
+        count.textContent++;
+    }
+    else {
+        clicked = false
+        likeIcon.innerHTML = `<i class="far fa-thumbs-up"></i>`
+        count.textContent--
+    }
+});
+</script>

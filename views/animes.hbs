@@ -1,0 +1,15 @@
+{{> menu}}
+<div class="row g-0">
+{{#each anime}}
+  <div class="card p-2 m-4 " style="width: 18rem">
+  <img width="465" height="657" src={{this.img}} class="img-thumbnail" alt="img">
+  <div class="card-body">
+    <h5 class="card-title">{{this.animename}}</h5>
+    <a class="btn btn-outline-danger" href="/animes/{{this.id}}" role="button">View</a>
+    {{> click}}
+  </div>
+</div>
+
+{{/each}}
+</div>
+</div>

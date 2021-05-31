@@ -1,0 +1,12 @@
+{{> menu}}
+<div class="row">
+{{#each news}}
+<div class="card p-2 m-4 " style="width: 18rem">
+  <img src={{this.img}} class="card-img-top" alt="img">
+  <div class="card-body">
+    <h5 class="card-title">{{this.Title}}</h5>
+    <a href="/news/{{this.id}}" class="btn btn-outline-danger">View</a>
+  </div>
+</div>
+{{/each}}
+</div>

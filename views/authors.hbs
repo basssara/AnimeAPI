@@ -1,0 +1,9 @@
+{{#each authors}}
+<div class="row">
+<div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">{{this.firstname}} {{this.lastname}}</h5>
+    <a href="/authors/{{this.id}}">Link</a>
+</div>
+</div>
+{{/each}}

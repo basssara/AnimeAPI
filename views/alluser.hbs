@@ -1,0 +1,25 @@
+{{> menu}}
+<div class="row g-0">
+    <h1>User Table</h1>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Username</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+        {{#each alluser}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.username}}</td>
+      <td><a href="#"class="btn btn-outline-danger">Update</a></td>
+      <td><a href="/userdel/{{this.id}}"class="btn btn-outline-danger">Delete</a></td>
+    </tr>
+{{/each}}
+    
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,25 @@
+{{> menu}}
+{{#each manga}}
+ <div class="container">
+    <figure class="mt-3 ">
+  <blockquote class="blockquote">
+    <h1>{{this.manganame}}</h1>
+  </blockquote>
+</figure>
+<div class="row g-0">
+    <div class="col-sm-6 col-md-8">
+<p>{{this.mangadescription}}</p>
+    <p class="fw-bold">Author: {{this.author}}</p>
+<p class="mt-4 fw-bold">Studio: {{this.studio}}</p>
+    <p class="fw-bold">Genre: {{this.genre}}</p>
+</div>
+<div class="col-6 col-md-4 mb-4">
+    <img src={{this.img}} class="img-thumbnail" alt="img">
+</div>
+</div>
+<div class="col-8">
+<a class="btn btn-danger mb-5" href={{this.file}}>Read</a>
+</div>
+</div>
+{{/each}}
+ </div>

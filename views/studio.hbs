@@ -1,0 +1,13 @@
+<div class="row g-0">
+{{#each studio}}
+  <div class="card p-2 m-4 " style="width: 18rem">
+  <!--<img src={{this.img}} class="img-thumbnail" alt="img">-->
+  <div class="card-body">
+    <h5 class="card-title">{{this.studioname}}</h5>
+    <a class="btn btn-outline-danger" href="/studio/{{this.id}}" role="button">View</a>
+  </div>
+</div>
+
+{{/each}}
+</div>
+</div>

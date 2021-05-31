@@ -1,0 +1,28 @@
+{{> menu}}
+<div class="row g-0">
+    <h1>Manga Table</h1>
+    <a href="/addmanga"class="col-4 btn btn-outline-danger">Add New Manga</a>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+        {{#each mangaall}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td><a class="fw-bold text-decoration-none text-dark" href="/mangas/{{this.id}}">{{this.manganame}}</a></td>
+      <td>{{this.author}}</td>
+      <td><a href="#"class="btn btn-outline-danger">Update</a></td>
+      <td><a href="/mangadel/{{this.id}}"class="btn btn-outline-danger">Delete</a></td>
+    </tr>
+{{/each}}
+    
+  </tbody>
+</table>
+</div>
