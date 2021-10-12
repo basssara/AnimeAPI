@@ -1,2 +1,2 @@
-# AnimeSite
+# AnimeApi
 MyBachelorWork
